@@ -1,0 +1,12 @@
+.DS_Store
+.dart_tool/
+
+.packages
+.pub/
+
+build/
+pubspec.lock
+flutter_sobot.iml
+*.xcworkspacedata
+*.xcscheme
+.idea/
