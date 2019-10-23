@@ -9,6 +9,9 @@ public class SwiftFlutterSobotPlugin: NSObject, FlutterPlugin {
   }
 
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
+    if(call.method=="start"){
+        FlutterSobotPlugin.start();
+    }
     result("iOS " + UIDevice.current.systemVersion)
   }
 }

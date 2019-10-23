@@ -41,5 +41,9 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+    <key>SobotAppkey</key>
+    <string>74f121dfde254b8da7e548b59adc41c3</string>
+    <key>SobotPartnerId</key>
+    <string>c5303aa073d14050a4a032b67519ba65</string>
 </dict>
 </plist>

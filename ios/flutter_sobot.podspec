@@ -12,10 +12,14 @@ Pod::Spec.new do |s|
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Your Company' => 'email@example.com' }
   s.source           = { :path => '.' }
-  s.source_files = 'Classes/**/*'
+  s.source_files = 'Classes/**/*','SobotLib/include/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
-
+  s.frameworks = 'AVFoundation', 'AssetsLibrary', 'AudioToolbox', 'SystemConfiguration', 'MobileCoreServices', 'webkit'
+  s.library = 'z'
+  s.vendored_frameworks = 'framework/SobotKit.framework'
+  s.resource = 'framework/SobotKit.bundle'
+  s.vendored_libraries='SobotLib/libSobotLib.a'
   s.ios.deployment_target = '8.0'
 end
 
