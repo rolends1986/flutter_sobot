@@ -1,0 +1,42 @@
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#else
+#ifndef FOUNDATION_EXPORT
+#if defined(__cplusplus)
+#define FOUNDATION_EXPORT extern "C"
+#else
+#define FOUNDATION_EXPORT extern
+#endif
+#endif
+#endif
+
+#ifndef SobotKit_h
+#define SobotKit_h
+
+#import "ZCUITools.h"
+#import "ZCLibCommon.h"
+#import "ZCUITipsDefine.h"
+#import "ZCUIToastTools.h"
+
+#import "ZCLogUtils.h"
+
+
+/**
+ *  控制日志输出
+ *
+ *  @param ...
+ *
+ *  @return
+ */
+//#ifndef __OPTIMIZE__
+//
+//#define NSLog(fmt,...) NSLog((@"%s [Line %d] \n" fmt ), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+//
+//#else
+
+//#define NSLog(...) {}
+
+//#endif
+
+
+#endif /* SobotKit_h */

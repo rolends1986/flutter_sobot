@@ -12,14 +12,19 @@ Pod::Spec.new do |s|
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Your Company' => 'email@example.com' }
   s.source           = { :path => '.' }
-  s.source_files = 'Classes/**/*','SobotLib/include/*'
+  s.source_files = 'Classes/**/*'  #,'SobotKit/**/*.{h,m,a}'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
   s.frameworks = 'AVFoundation', 'AssetsLibrary', 'AudioToolbox', 'SystemConfiguration', 'MobileCoreServices', 'webkit'
-  s.library = 'z'
-  s.vendored_frameworks = 'framework/SobotKit.framework'
-  s.resource = 'framework/SobotKit.bundle'
-  s.vendored_libraries='SobotLib/libSobotLib.a'
+  s.library = 'z.1.2.5'
+  s.vendored_frameworks = 'SobotKit.framework'
+  s.resource = "SobotKit.bundle"
+#  s.resource_bundles = {
+#    'SobotKit' => ['SobotKit_bundle/**/*.{png,lproj}'],
+#  }
+  s.xcconfig = {  "OTHER_LDFLAGS" => "$(inherited) -licucore"}
+  #s.vendored_libraries='SobotKit/SobotLib/libSobotLib.a'
+  #s.prefix_header_file = 'flutter_sobot-prefix.pch'
   s.ios.deployment_target = '8.0'
 end
 
